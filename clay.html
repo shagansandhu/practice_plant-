@@ -7,6 +7,105 @@
     <title>Document</title>
     <link rel="stylesheet" href="home.css">
 </head>
+    body {
+      line-height: 1.5;
+      font-family: serif;
+   }
+   *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+   }
+   .containerr {
+      max-width: 1170px;
+      background-color: #24262b;
+      margin: auto;
+   }
+   .row {
+      display: flex;
+      flex-wrap: wrap;
+   }
+   ul {
+      list-style: none;
+   }
+   .footer {
+      background-color: #24262b;
+      padding: 70px 0;
+
+   }
+   .footer-col {
+      width: 25%;
+      padding: 0 15px;
+   }
+   .footer-col h4 {
+      font-size: 18px;
+      color: #ffffff;
+      text-transform: capitalize;
+      margin-bottom: 30px;
+      font-weight: 500;
+      position: relative;
+      
+   }
+.footer-col h4::before {
+   content: '';
+   position: absolute;
+   left: 0;
+   bottom: -10px;
+   background-color: pink;
+   height: 2px;
+   box-sizing: border-box;
+   width: 50px;
+   
+}
+.footer-col ul li:not(:last-child) {
+   margin-bottom: 10px;
+}
+.footer-col ul li a {
+   font-size: 16px;
+   text-transform: capitalize;
+   color: #ffffff;
+   text-decoration: none;
+   font-weight: 300;
+   color: #bbbbbb;
+   display: block;
+   transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+   color: #ffffff;
+   padding-left: 8px;
+}
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
 <body>
     <header>
         <nav>
@@ -43,19 +142,54 @@
     </main>
     <br>
     <br>
-    <footer>
-        <a href="home.html">Home</a>
-        <a href="About.html">About Us</a>
-        <a href="IndoorPlants.html">Shop</a>
-        <a href="info.html">Info</a>
-        <a href="login.html">Login</a>
-        <br>
-        <br>
-        <a href="IndoorPlants.html">Indoor Plants |</a>
-        <a href="Flowering.html">Flowering Plants |</a>
-        <a href="Outdoor.html">Outdoor Plants |</a>
-        <a href="clay.html">Clay Pots</a>
-        <a class="copyright">&copy; 2022 | Green Organic</a>
-    </footer>
+    <footer class="footer"> 
+      <div class="containerr">
+         <div class="row">
+            <div class="footer-col">
+               <h4>About Us</h4>
+               <ul>
+                  <li><a href="#">Class Drop Schedule</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Support</a></li>
+               </ul>
+            </div>
+
+            <div class="footer-col">
+               <h4>Our App</h4>
+               <ul>
+                  <li><a href="#">Google Play Store</a></li>
+                  <li><a href="#">Apple Store</a></li>
+                  <li><a href="#">Get Apps</a></li>
+               </ul>
+
+            </div>
+            <div class="footer-col">
+               <h4>follow us</h4>
+
+               <ul>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Youtube</a></li>
+                  <li><a href="#">Instagram</a></li>
+                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-twitter"></a>
+                  <a href="#" class="fa fa-youtube"></a>
+                  <a href="#" class="fa fa-instagram"></a>
+               </ul>
+            </div>
+
+            <div class="footer-col">
+               <h4>More</h4>
+               <ul>
+                  <li><a href="#">Terms and conditions</a></li>
+                  <li><a href="#">Privacy and Security</a></li>
+                  
+               </ul>
+           
+         </div>
+      </div>
+   </footer>
+
 </body>
 </html>
